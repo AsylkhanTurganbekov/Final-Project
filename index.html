@@ -229,9 +229,125 @@
                         </li>
                     </div>
                 </div>
- 
-               
+                <div class="artists">
+                    <div class="nameartist">
+                        <h4>Popular Artists</h4>
+                    </div>
+                    <div class="list">
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="eminem.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Eminem
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="justin.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Justin Bieber
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="edsh.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Ed Sheeran
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="travis.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Travis Scott
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="harry.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Harry Styles
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="weeknd.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>The Weeknd
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="katy.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Katy Perry
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="billie.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Billie Eilish
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                        <li class="item">
+                            <div class="imgplay">
+                                <img src="charlie.jpg" alt="">
+                                <a href="https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <h4>Charlie Puth
+                                <div>Artist</div>
+                            </h4>
+                        </li>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="master">
+            <img class="curimg" id="curimg" src="vendetta.jpg" alt="">
+            <h5>
+                <div id="cursong">Vendetta!</div>
+                <div id="curartis" class="subtitle">Singer</div>
+            </h5>
+            <div class="likebutton">
+                <img id="likesong" onclick="like()" src="heart.png" alt="">
+            </div>
+            <div class="playcenter">
+                <div class="icon">
+                    <i id="prevbut" onclick="prev()" class="bi bi-skip-start-fill"></i>
+                    <i id="playbut" onclick="pause()" class="bi bi-play-fill"></i>
+                    <i id="nextbut" onclick="next()" class="bi bi-skip-end-fill"></i>
+                </div>
+                <div class="audio-player">
+                    <div id="seekObjContainer">
+                        <div id="timeline1">
+                            <div id="seekObj1" class="playhead" style="margin-left: 0px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="volume">
+                <img src="volume-up.png" style="margin-right: 3%;width: 5%;" alt="">
+                <input type="range" min="0" max="100" value="30" id="volume-slider">
+            </div>
+        </div>
+
     </header>
 
     <script>
