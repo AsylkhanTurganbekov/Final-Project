@@ -93,3 +93,136 @@ header .menu .playlist div{
     height: 33%;
     padding-left: 10%;
 }
+
+  
+header .menu .playlist div h4{
+    padding-left: 7%;
+    font-size: 16px;
+}
+
+header .menu .pustoi{
+    height: 8%;
+}
+
+header .menu .menu_song{
+    display: block;
+    width: 100%;
+    height: 60%;
+    border-top: 1px solid #4c5262;
+}
+
+header .menu .menu_song .songitem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    transition: .4s linear;
+}
+
+header .menu .menu_song .songitem:hover{
+    background: rgb(105,105,170,.3);
+}
+
+header .menu .menu_song .songitem div:nth-child(1){
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5262;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+header .menu .menu_song .songitem div:nth-child(2){
+    display: flex;
+    width: 10%;
+}
+
+header .menu .menu_song .songitem div:nth-child(2) img{
+    width: 100%;
+}
+
+header .menu .menu_song .songitem div:nth-child(3){
+    display: flex;
+    align-items: center;
+    width: 77%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+header .menu .menu_song .songitem div:nth-child(3) h5{
+    width: 93%;
+}
+
+header .menu .menu_song .songitem div:nth-child(3) img{
+    width: 5%;
+}
+
+header .master{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+  
+header .master img{
+    width: 4%;
+}
+  
+header .master h5{
+    width: 13%;
+    font-size: 15px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+}
+  
+header .master h5 .subtitle{
+    font-size: 12px;
+    margin-top: 3px;
+    color: #4c5262;
+}
+
+header .master .likebutton{
+    width: 8%;
+}
+
+header .master .likebutton img{
+    width: 8%;
+    background-color: rgb(213, 213, 213);
+    padding: 2%;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.bi-heart{
+    position: absolute;
+    right: 81%;
+    bottom: 5%;
+}
+  
+header .master .icon{
+    font-size: 25px;
+    color: #fff;
+    margin: 0px 20px 0px 40px;
+}
+
+header .master .playcenter{
+    width: 50%;
+    display: block;
+}
+
+header .master .playcenter .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+header .master .playcenter .bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
