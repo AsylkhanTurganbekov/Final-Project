@@ -226,3 +226,429 @@ header .master .playcenter .bar{
 }
   
 
+header .master .playcenter .icon .bi-play-fill{
+    border: 2px solid rgb(105,105,170,.4);
+    border-radius: 50%;
+    padding: 2px 4px 3px 6px;
+    margin: 0px 20px;
+    transition: .3s linear;
+}
+
+header .master .playcenter .icon .bi-pause-fill{
+    border: 2px solid rgb(105,105,170,.4);
+    border-radius: 50%;
+    padding: 2px 4px 2px 5px;
+    margin: 0px 20px;
+    transition: .3s linear;
+}
+
+header .master .playcenter .icon .bi:nth-child(2):hover{
+    background-color: rgb(105,105,170,.3);
+}
+
+header .master .volume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+#volume-slider {
+    width: 30%;
+}
+
+header .master .playcenter #seekObjContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div #timeline1 {
+    width: 70%;
+    height: 4px;
+    border-radius: 3px;
+    background: #555555;
+    display: block;
+}
+
+div #seekObj1 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    top: -2px;
+}
+
+.pushits{
+    display: flex;
+    width: 100%;
+    height: 7%;
+}
+
+header .song .hits{
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    width: 99%;
+    height: 30%;
+    background-color: rgb(0,0,0,.3);
+    border-radius: 7px;
+}
+  
+header .song .hits .hitimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+header .song .hits .hitimg img{
+    width: 75%;
+}
+
+header .song .hits .hit2{
+    display: block;
+    width: 80%;
+    height: 100%;
+}
+
+header .song .hits .hit2 .plname{
+    display: flex;
+    align-items: flex-end;
+    width: 100%; 
+    height: 20%;
+}
+
+header .song .hits .hit2 .name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 50px;
+}
+
+header .song .hits .hit2 .desc{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+header .song .hits .hit2 .buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+  
+header .song .profile{
+    display: flex;
+    width: 55px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 3px 30px 3px 2px;
+    background-color: rgb(0,0,0,.6);
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    display: inline-block;
+}
+
+header .song .profile .tog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .profile .tog i{
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    font-size: 11px;
+}
+  
+header .song .profile img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+header .song .profile .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #242424;
+    min-width: 180px;
+    border-radius: 5px;
+    right: 0px;
+}
+
+header .song .profile .dropdown-content a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 16px;
+    margin: 3px 4px 3px 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+header .song .profile .dropdown-content a .bi{
+    position: absolute;
+    right: 10px;
+}
+
+header .song .profile:hover .dropdown-content {
+    display: block;
+}
+
+header .song .profile .dropdown-content a:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+header .song .profile h5{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #fff;
+}
+  
+header .song .hits .buttons button{
+    width: 110px;
+    height: 50%;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    font-weight: bold;
+}
+  
+header .song .hits .buttons button:nth-child(1){
+    width: 90px;
+    color: #000;
+    background-color: #18A514;
+    margin-right: 10px;
+}
+  
+header .song .hits .buttons button:hover{
+    background: #0b1320;
+}
+  
+header .song .hits .buttons button:nth-child(1):hover{
+    background-color: #36C832;
+}
+
+header .song .mixes {
+    margin: 40px 0px 0px 30px;
+    width: 95%;
+    height: 40vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.namemix{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: -1%;
+    height: 1%;
+    font-size: 25px;
+}
+
+header .song .mixes::-webkit-scrollbar{
+    display: flex;
+}
+
+header .song .mixes .list {
+    width: 100%;
+    display: flex;
+}
+
+header .song .mixes .list li {
+    min-width: 200px;
+    height: 280px;
+    list-style-type: none;
+    margin-right: 15px;
+    transition: .3s linear;
+    background-color: rgba(22, 30, 51, 0.7);
+    border-radius: 7px;
+}
+
+header .song .mixes .list li:hover{
+    background: rgba(37, 37, 76, 0.9);
+}
+
+header .song .mixes .list li .imgplay {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .mixes .list li .imgplay img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border-bottom: 6px solid #ce5858;
+}
+
+header .song .mixes .list li:nth-child(2) .imgplay img{
+    border-bottom: 6px solid #ffcc00;
+}
+
+header .song .mixes .list li:nth-child(3) .imgplay img{
+    border-bottom: 6px solid #ffcc00;
+}
+
+header .song .mixes .list li .imgplay a i{
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4fc44b;
+    padding: 9px 10px 9px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+header .song .mixes .list li .imgplay .bi-spotify{
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    left: 25px;
+}
+
+header .song .mixes .list li .imgplay .bi-file-fill{
+    position: absolute;
+    color:#e46363;
+    font-size: 12px;
+    bottom: -5px;
+    left: 20px;
+}
+
+header .song .mixes .list li:nth-child(2) .imgplay .bi-file-fill{
+    color:#ffcc00;
+}
+
+header .song .mixes .list li:nth-child(3) .imgplay .bi-file-fill{
+    color:#ffcc00;
+}
+
+header .song .mixes .list li .imgplay h5{
+    position: absolute;
+    bottom: -5px;
+    left: 37px;
+    font-size: 14px;
+}
+
+header .song .mixes .list li:hover .bi{
+    opacity: 1;
+}
+
+header .song .mixes .list li h4{
+    max-width: 150px;
+    margin: 25px 0px 0px 10px;
+    padding: 15px;
+}
+
+header .song .mixes .list li h4 div{
+    opacity: .5;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+header .song .artists {
+    margin-left: 30px;
+    width: 95%;
+    height: 50vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+header .song .artists::-webkit-scrollbar{
+    display: flex;
+}
+
+header .song .artists .nameartist h4 {
+    font-size: 25px;
+}
+
+header .song .artists .list {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+}
+
+header .song .artists .list li {
+    min-width: 200px;
+    height: 260px;
+    list-style-type: none;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    transition: .3s linear;
+    background-color: rgba(22, 30, 51, 0.7);
+    border-radius: 7px;
+}
+
+header .song .artists .list li:hover{
+    background: rgba(37, 37, 76, 0.9);
+}
+
+header .song .artists .list li .imgplay {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .artists .list li .imgplay img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .song .artists .list li .imgplay a i{
+    position: absolute;
+    left: 115px;
+    top: 115px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4fc44b;
+    padding: 9px 10px 9px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+header .song .artists .list li:hover .bi{
+    opacity: 1;
+}
+
+header .song .artists .list li h4{
+    max-width: 150px;
+    margin: 20px 0px 0px 10px;
+    padding: 17px;
+}
+
+header .song .artists .list li h4 div{
+    margin-top: 10px;
+    opacity: .5;
+    font-size: 15px;
+}
