@@ -351,7 +351,81 @@
     </header>
 
     <script>
-        
+        isLiked = false;
+        function like() {
+            if(isLiked==false) {
+                document.getElementById("likesong").src = "heart2.png";
+                isLiked = true;
+            }
+            else {
+                document.getElementById("likesong").src = "heart.png";
+                isLiked = false;
+            }
+        }
+        function changetext() {
+            if(document.getElementById("demo").innerHTML=="Follow") {
+                document.getElementById("demo").innerHTML = "Unfollow"
+                document.getElementById("demo").style.color = "green";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Follow";
+                document.getElementById("demo").style.color = "white";
+            }
+        }
+        isPlaying = false;
+        var songs = ["vendetta.mp3","under.mp3","lml.mp3","wasted.mp3","losing.mp3"];
+        var curimglist = ["vendetta.jpg","under.jpg","lovemelike.jpg","wasted.jpg","losing.jpg"];
+        var cursonglist = ["Vendetta!","Under The Influence","Love Me Like You Do","Wasted","Losing Interest"];
+        var ids = ["id1","id2","id3","id4","id5"];
+        var cur = 0;
+        var song = new Audio();
+        function musicPlay(a) {
+            document.getElementById(ids[cur]).src = "play.png";
+            cur = a;
+            song.src = songs[a];
+            song.play();
+            document.getElementById("playbut").className = "bi bi-pause-fill";
+            document.getElementById("cursong").innerHTML = cursonglist[cur];
+            document.getElementById("curimg").src = curimglist[cur];
+            document.getElementById(ids[cur]).src = "pause.png";
+            isPlaying = true;
+        }
+        function pause() {
+            if(isPlaying==false) {
+                curimg
+                song.src = songs[cur];
+                song.play();
+                document.getElementById("playbut").className = "bi bi-pause-fill";
+                document.getElementById(ids[cur]).src = "pause.png";
+                isPlaying = true;
+            }
+            else{
+                song.pause();
+                document.getElementById("playbut").className = "bi bi-play-fill";
+                document.getElementById(ids[cur]).src = "play.png";
+                isPlaying = false;
+            }
+        }
+        function next() {
+            if(cur==4) {
+                isPlaying = false;
+                musicPlay(0);
+            }
+            else if(cur<4) {
+                isPlaying = false;
+                musicPlay(cur+1);
+            }
+        }
+        function prev() {
+            if(cur>0) {
+                isPlaying = false;
+                musicPlay(cur-1);
+            }
+        }
+        let volume = document.getElementById('volume-slider');
+        volume.addEventListener("change", function(e) {
+            song.volume = e.currentTarget.value / 100;
+        });        
     </script>
 
 </body>
