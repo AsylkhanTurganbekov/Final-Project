@@ -53,6 +53,16 @@ header .menu, .song{
     background-color: rgba(0,0,0,0.3);
 }
 
+.mp {
+    display: none;
+    position: fixed;
+    padding-top: 15%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .m-content {
     position: relative;
     background-color: rgb(17, 86, 190);
@@ -66,6 +76,57 @@ header .menu, .song{
     animation-duration: 0.4s;
     border-radius: 0.4rem;
     color: #fff;
+}
+
+.m-content-2 {
+    position: relative;
+    display: flex;
+    background-color: rgb(17, 86, 190);
+    margin: auto;
+    padding: 64px;
+    width: 500px;
+    height: 200px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+
+.m-content-2 img {
+    max-width: 200px;
+    margin-right: 64px;
+}
+
+.m-content-2 .mp-2{
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.m-content-2 .mp-2 button:nth-child(1){
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+    background-color: transparent;
+    color: rgb(216, 214, 214);
+}
+
+.m-content-2 .mp-2 button:nth-child(2){
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
 }
 
 .m-header {
