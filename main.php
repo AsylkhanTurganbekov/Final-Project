@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify: Music For Everyone</title>
-    <link rel="stylesheet" href="spotifynew.css">
+    <link rel="stylesheet" href="\proj\first.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" href="favicon.png">
 </head>
@@ -53,8 +53,8 @@
                 <div class="list">
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="piano.jpg" alt="">
+                            <a onclick="openplaylist('piano.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -64,8 +64,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="dfocus.jpg" alt="">
+                            <a onclick="openplaylist('dfocus.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -75,8 +75,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="is.jpg" alt="">
+                            <a onclick="openplaylist('is.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -86,8 +86,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="cl.jpg" alt="">
+                            <a onclick="openplaylist('cl.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -97,8 +97,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="cm.jpg" alt="">
+                            <a onclick="openplaylist('cm.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -108,8 +108,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="ff.jpg" alt="">
+                            <a onclick="openplaylist('ff.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -122,8 +122,8 @@
                 <div class="list">
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="tth.jpg" alt="">
+                            <a onclick="openplaylist('tth.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -133,8 +133,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="rc.jpg" alt="">
+                            <a onclick="openplaylist('rc.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -144,8 +144,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="ao.jpg" alt="">
+                            <a onclick="openplaylist('ao.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -155,8 +155,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="rock.jpg" alt="">
+                            <a onclick="openplaylist('rock.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -166,8 +166,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="ch.jpg" alt="">
+                            <a onclick="openplaylist('ch.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -177,8 +177,8 @@
                     </li>
                     <li class="item">
                         <div class="imgplay">
-                            <img src="fujii.jpg" alt="">
-                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <img src="vl.jpg" alt="">
+                            <a onclick="openplaylist('vl.jpg')"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
                         </div>
                         <h4>
@@ -231,9 +231,22 @@
         </div>
     </div>
 
+    <div id="mp" class="mp">
+        <div class="m-content-2">
+            <img id="imgp" src="" alt="">
+            <div class="mp-2">
+                <h2>Start listening with a free Spotify account</h2>
+                <a href="registration.php" class="signupmp"><button>Sign up free</button></a>
+                <h5>Already have an account? <a href="login.php" class="loginmp"> Log in</a></h5>
+                <a href="" class="closemp"><button onclick="closelink1()">Close</button></a>
+            </div>
+        </div>
+    </div>
+
     <script>
         var mpopup = document.getElementById('mc');
         var mpopup1 = document.getElementById('ml');
+        var mpopup2 = document.getElementById('mp');
         function openlink(){
             mpopup.style.display = "block";
         }
@@ -246,10 +259,15 @@
         function closelink1(){
             mpopup1.style.display = "none";
         }
+        function openplaylist(value){
+            mpopup2.style.display = "block";
+            document.getElementById("imgp").src = value;
+        }
         window.onclick = function(event) {
-            if (event.target == mpopup || event.target == mpopup1) {
+            if (event.target == mpopup || event.target == mpopup1 || event.target == mpopup2) {
                 mpopup.style.display = "none";
                 mpopup1.style.display = "none";
+                mpopup2.style.display = "none";
             }
         }
     </script>
