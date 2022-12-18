@@ -849,11 +849,9 @@ header .song .artists .list li {
     background-color: rgba(22, 30, 51, 0.7);
     border-radius: 7px;
 }
-
 header .song .artists .list li:hover{
     background: rgba(37, 37, 76, 0.9);
 }
-
 header .song .artists .list li .imgplay {
     position: relative;
     width: 120px;
