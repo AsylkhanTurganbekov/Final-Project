@@ -49,28 +49,143 @@
                 <a href="login.php"><button>Log in</button></a>
             </div>
             <div class="main2">
-                <div class="grid">
-                    <div>
+                <div class="namemix2">Focus</div>
+                <div class="list">
+                    <li class="item">
                         <div class="imgplay">
-                            <img src="lofi.jpg" alt="">
-                            <h5>Lofi girl</h5>
-                            <a href="https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM"><i class="bi bi-play-fill"></i></a>
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
                             <i class="bi bi-spotify"></i>
-                            <i class="bi bi-file-fill"></i>
                         </div>
                         <h4>
-                            Lofi hip hop - beats to relax/study to
-                            <div>A daily selection of chill beats</div>
+                            Peaceful Piano
+                            <div>Relax and indulge with beautiful piano pieces</div>
                         </h4>
-                    </div>
-                    <div>
-                        <div>haha</div>
-                        <div>description</div>
-                    </div>
-                    <div>
-                        <div>haha</div>
-                        <div>description</div>
-                    </div>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Deep Focus
+                            <div>Keep calm and focus with ambient and post-rock music.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Instrumental Study
+                            <div>Focus with soft study music in the background.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            chill lofi beats
+                            <div>The perfect study beats. Crush your productivity.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Coding Mode
+                            <div>Dedicated to all the programmers out there.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Focus Flow
+                            <div>Uptempo instrumental hip hop beats.</div>
+                        </h4>
+                    </li>
+                </div>
+                <div class="namemix2">Spotify Playlists</div>
+                <div class="list">
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Today's Top Hits
+                            <div>SZA is on top of the Hottest 50!</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            RapCavier
+                            <div>New music from Lil Durk, Juice WRLD and A Boogie Wit da Hoodie.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            All Out 2010s
+                            <div>The biggest songs of the 2010s.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Rock Classics
+                            <div>Rock legends epic songs that continue to inspire generations.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Chill hits
+                            <div>Kick back to the best new and recent chill hits.</div>
+                        </h4>
+                    </li>
+                    <li class="item">
+                        <div class="imgplay">
+                            <img src="fujii.jpg" alt="">
+                            <a onclick="openlink()"><i class="bi bi-play-fill"></i></a>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                        <h4>
+                            Viva Latino
+                            <div>Today's top Latin hits, elevando nuestra música. Cover: Villano Antillano</div>
+                        </h4>
+                    </li>
                 </div>
             </div>
         </div>
