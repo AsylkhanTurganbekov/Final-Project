@@ -9,7 +9,7 @@ include("auth_session.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify: Music For Everyone</title>
-    <link rel="stylesheet" href="\proj\first.css">
+    <link rel="stylesheet" href="\proj\second.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" href="favicon.png">
 </head>
@@ -22,10 +22,10 @@ include("auth_session.php");
                 <i class="bi bi-r-circle"></i>
             </div>
 
-            <div class="playlist">
+            <div class="playlist" id="playlist">
                 <div class="home">
                     <i class="bi bi-house-door"></i>
-                    <h4>Home</h4>
+                    <h4 onclick="replace('song1')">Home</h4>
                 </div>
                 <div class="search">
                     <i class="bi bi-search"></i>
@@ -33,21 +33,31 @@ include("auth_session.php");
                 </div>
                 <div class="library">
                     <i class="bi bi-collection"></i>
-                    <h4>Your Library</h4>
+                    <h4 onclick="replace('song2')">Your Library</h4>
                 </div>
                 <div></div>
                 <div class="create">
                     <i class="bi bi-plus-square"></i>
-                    <h4 onclick="openlink()">Create Playlist</h4>
+                    <h4 onclick="createlist()">Create Playlist</h4>
                 </div>
                 <div class="liked">
                     <i class="bi bi-chat-square-heart"></i>
-                    <h4 onclick="openlink1()">Liked Songs</h4>
+                    <h4 onclick="">Liked Songs</h4>
                 </div>
             </div>
         </div>
             
-        <div class="song">
+        <div class="song" id="song1">
+                <div class="profile1">
+                    <div class="tog">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a onclick="replace('song1')">Home</a>
+                        <a>Search</a>
+                        <a onclick="replace('song2')">Your Library</a>
+                    </div>
+                </div>
                 <div class="profile">
                     <div class="tog">
                         <img src="maiedit.jpg">
@@ -269,7 +279,30 @@ include("auth_session.php");
                 </div>
             </div>
 
-        </div>
+            <div class="song" id="song2">
+                <div class="profile1">
+                    <div class="tog">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a onclick="replace('song1')">Home</a>
+                        <a>Search</a>
+                        <a onclick="replace('song2')">Your Library</a>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="tog">
+                        <img src="maiedit.jpg">
+                        <h5 title="mai"><?php echo $_SESSION['username'];?></h5>
+                        <i class="bi bi-caret-down-fill"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="https://www.spotify.com/by-ru/account/overview/?utm_source=spotify&utm_medium=menu&utm_campaign=your_account" target="_blank">Account<i class="bi bi-box-arrow-up-right"></i></a>
+                        <a href="https://open.spotify.com/user/31ii5hmi3xtje7xogmglfbyzvzoa">Profile</a>
+                        <a href="logout.php">Log Out</a>
+                    </div>
+                </div>
+            </div>
         
         <div class="master">
             <img class="curimg" id="curimg" src="vendetta.jpg" alt="">
@@ -377,6 +410,33 @@ include("auth_session.php");
         volume.addEventListener("change", function(e) {
             song.volume = e.currentTarget.value / 100;
         });
+        
+        function createlist(){
+            var element = document.createElement('div');
+            element.innerHTML = 'playlist';
+            document.getElementById('playlist').appendChild(element);
+            if(localStorage.getItem('key')!=null) {
+                localStorage.setItem('key',localStorage.getItem('key')+'/'+element.innerHTML);
+            }
+            else localStorage.setItem('key',element.innerHTML);
+        }
+        function getlist(){
+            if(localStorage.getItem('key')!=null) {
+                const myArray = localStorage.getItem('key').split('/');
+                for(var i = 0; i < myArray.length; i++) {
+                    var element = document.createElement('div');
+                    element.innerHTML = myArray[i];
+                    document.getElementById('playlist').appendChild(element);
+                }
+            }
+        }
+        var curr = document.getElementById('song1');
+        function replace(repid) {
+            curr.style.display = 'none';
+            curr = document.getElementById(repid);
+            curr.style.display = 'block';
+        }
+        window.onload = getlist;
     </script>
 </body>
 </html>
