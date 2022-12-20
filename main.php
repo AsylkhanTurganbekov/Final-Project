@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify: Music For Everyone</title>
-    <link rel="stylesheet" href="\proj\first.css">
+    <link rel="stylesheet" href="\proj\fourth.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" href="favicon.png">
 </head>
+
+<style>
+    @media screen and (max-width: 700px) {
+        header .song {
+            height: 100vh;
+        }
+
+        header .preview {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .main2 .list li {
+            min-width: 150px;
+            height: 200px;
+        }
+
+        .main2 .list li h4 {
+            font-size: 10px;
+        }
+
+        .main2 .list li h4 div {
+            display: none;
+        }
+
+        .main2 .list li .imgplay {
+            position: relative;
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+</style>
+
 <body>
     <header>
         <div class="menu">
@@ -42,8 +80,18 @@
                 </div>
             </div>
         </div>
-            
+
         <div class="song">
+            <div class="profile1">
+                <div class="tog">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a>Home</a>
+                    <a>Search</a>
+                    <a>Your Library</a>
+                </div>
+            </div>
             <div class="main1">
                 <a href="registration.php"><button>Sign up</button></a>
                 <a href="login.php"><button>Log in</button></a>
@@ -247,19 +295,24 @@
         var mpopup = document.getElementById('mc');
         var mpopup1 = document.getElementById('ml');
         var mpopup2 = document.getElementById('mp');
-        function openlink(){
+
+        function openlink() {
             mpopup.style.display = "block";
         }
-        function closelink(){
+
+        function closelink() {
             mpopup.style.display = "none";
         }
-        function openlink1(){
+
+        function openlink1() {
             mpopup1.style.display = "block";
         }
-        function closelink1(){
+
+        function closelink1() {
             mpopup1.style.display = "none";
         }
-        function openplaylist(value){
+
+        function openplaylist(value) {
             mpopup2.style.display = "block";
             document.getElementById("imgp").src = value;
         }
@@ -272,4 +325,5 @@
         }
     </script>
 </body>
+
 </html>

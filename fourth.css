@@ -1,0 +1,1039 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+  
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #353030;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .menu, .song{
+    position: relative;
+    width: 16%;
+    height: 90%;
+    background-color: #090a19;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.mc {
+    display: none;
+    position: fixed;
+    padding-top: 32%;
+    padding-right: 52%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.ml {
+    display: none;
+    position: fixed;
+    padding-top: 37%;
+    padding-right: 52%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.mp {
+    display: none;
+    position: fixed;
+    padding-top: 22%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.m-content {
+    position: relative;
+    background-color: rgb(17, 86, 190);
+    margin: auto;
+    padding: 0px 15px;
+    width: 300px;
+    height: 150px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+
+.m-content-2 {
+    position: relative;
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    padding: 64px;
+    width: 500px;
+    height: 200px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+
+.m-content-2 img {
+    max-width: 200px;
+    margin-right: 64px;
+}
+
+.m-content-2 .mp-2{
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.closemp button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+    background-color: transparent;
+    color: rgb(147, 147, 147);
+}
+
+.signupmp button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 5px;
+    width: 120px;
+    background-color: #52bd55;
+}
+
+.loginmp{
+    color: #fff;
+    cursor: pointer;
+}
+
+.mp-2 h2{
+    margin-bottom: 25px;
+}
+
+.mp-2 h5{
+    margin-top: 10px;
+}
+
+.m-header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.m-body {
+    font-size: 13px;
+}
+
+.m-footer {
+    padding-top: 18px;
+    text-align: right;
+}
+
+.m-footer a:nth-child(1) button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+    background-color: transparent;
+    color: rgb(216, 214, 214);
+}
+
+.m-footer a:nth-child(2) button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+}
+
+@keyframes animatetop {
+    from {left:-150px; opacity:0}
+    to {left:0; opacity:1}
+}
+  
+header .song{
+    overflow-x: hidden;
+    width: 84%;
+    background: linear-gradient(#650D26,#000000);
+}
+
+header .song::-webkit-scrollbar, .menu::-webkit-scrollbar{
+    display: flex;
+}
+
+header #song1{
+    display: block;
+}
+
+header #song2{
+    display: none;
+}
+  
+header .master{
+    width: 100%;
+    height: 10%;
+    background-color: #111727;
+}
+
+header .preview{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #ae29a6;
+}
+
+header .preview .p-1{
+    width: 87%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 1%;
+    font-size: 13px;
+}
+
+header .preview .p-2{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .preview .p-2 a{
+    width: 65%;
+}
+
+header .preview .p-2 button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+header .song .main1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 8%;
+}
+
+header .song .main1 a:nth-child(1) button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+    background-color: transparent;
+    color: rgb(216, 214, 214);
+}
+
+header .song .main1 a:nth-child(2) button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 80px;
+}
+
+header .song .main1 a{
+    padding-right: 2%;
+}
+
+header .menu .spotify{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    width: 100%;
+    height: 15%;
+    font-size: 12px;
+}
+  
+header .menu .spotify i:nth-child(1){
+    font-size: 35px;
+}
+
+header .menu .spotify h1{
+    margin: 0% 1% 0% 3%;
+}
+  
+header .menu .spotify i:nth-child(3){
+    font-size: 6px;
+}
+  
+header .menu .playlist{
+    display: block;
+    width: 100%;
+    height: 17%;
+}
+  
+header .menu .playlist h4{
+    color: #aaa9a9;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+header .menu .playlist h4:hover{
+    color: #fff;
+}
+  
+header .menu .playlist div{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 33%;
+    padding-left: 10%;
+}
+  
+header .menu .playlist div h4{
+    padding-left: 7%;
+    font-size: 14px;
+}
+
+header .master{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+  
+header .master img{
+    width: 4%;
+}
+  
+header .master h5{
+    width: 13%;
+    font-size: 15px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+}
+  
+header .master h5 .subtitle{
+    font-size: 12px;
+    margin-top: 3px;
+    color: #4c5262;
+}
+
+header .master .likebutton{
+    width: 8%;
+}
+
+header .master .likebutton img{
+    width: 8%;
+    background-color: rgb(213, 213, 213);
+    padding: 2%;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.bi-heart{
+    position: absolute;
+    right: 81%;
+    bottom: 5%;
+}
+  
+header .master .icon{
+    font-size: 25px;
+    color: #fff;
+    margin: 0px 20px 0px 40px;
+}
+
+header .master .playcenter{
+    width: 50%;
+    display: block;
+}
+
+header .master .playcenter .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+header .master .playcenter .bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+header .master .playcenter .icon .bi-play-fill{
+    border: 2px solid rgb(105,105,170,.4);
+    border-radius: 50%;
+    padding: 2px 4px 3px 6px;
+    margin: 0px 20px;
+    transition: .3s linear;
+}
+
+header .master .playcenter .icon .bi-pause-fill{
+    border: 2px solid rgb(105,105,170,.4);
+    border-radius: 50%;
+    padding: 2px 4px 2px 5px;
+    margin: 0px 20px;
+    transition: .3s linear;
+}
+
+header .master .playcenter .icon .bi:nth-child(2):hover{
+    background-color: rgb(105,105,170,.3);
+}
+
+header .master .volume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+#volume-slider {
+    width: 30%;
+}
+
+header .master .playcenter #seekObjContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div #timeline1 {
+    width: 70%;
+    height: 4px;
+    border-radius: 3px;
+    background: #555555;
+    display: block;
+}
+
+div #seekObj1 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    top: -2px;
+}
+
+.pushits{
+    display: flex;
+    width: 100%;
+    height: 7%;
+}
+
+header .song .hits{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    height: 35%;
+    background-color: rgb(0,0,0,.3);
+    border-radius: 7px;
+}
+  
+header .song .hits .hitimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+header .song .hits .hitimg img{
+    width: 72%;
+}
+
+header .song .hits .hit2{
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+header .song .hits .hit2 .plname{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 25%;
+}
+
+header .song .hits .hit2 .name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 50px;
+}
+
+header .song .hits .hit2 .desc{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+header .song .hits .hit2 .buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+.pr {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    right: 180px;
+    top: 2%;
+}
+
+.sp {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    right: 270px;
+    top: 2%;
+}
+
+header .song .profile, .profile1{
+    display: flex;
+    width: 55px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 3px 33px 3px 6px;
+    background-color: rgb(0,0,0,.6);
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    display: inline-block;
+}
+
+header .song .profile1{
+    background-color: transparent;
+    width: 30px;
+    padding: 0;
+    border-radius: 0;
+}
+
+header .song .profile1{
+    display: none;
+    left: 2%;
+}
+
+header .song .profile .tog, .profile1 .tog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .profile .tog i{
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    font-size: 11px;
+}
+
+header .song .profile1 .tog i{
+    font-size: 30px;
+}
+  
+header .song .profile img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+header .song .profile .dropdown-content, .profile1 .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #242424;
+    min-width: 180px;
+    border-radius: 5px;
+    right: 0px;
+}
+
+header .song .profile1 .dropdown-content{
+    left: 0px;
+}
+
+header .song .profile .dropdown-content a{
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 16px;
+    margin: 3px 4px 3px 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+header .song .profile1 .dropdown-content a{
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 16px;
+    margin: 3px 4px 3px 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+header .song .profile .dropdown-content a .bi{
+    position: absolute;
+    right: 10px;
+}
+
+header .song .profile:hover .dropdown-content, .profile1:hover .dropdown-content{
+    display: block;
+}
+
+header .song .profile .dropdown-content a:hover, .profile1 .dropdown-content a:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+header .song .profile h5{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+header .song .hits .buttons button{
+    width: 110px;
+    height: 50%;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    font-weight: bold;
+}
+  
+header .song .hits .buttons button:nth-child(1){
+    width: 90px;
+    color: #000;
+    background-color: #18A514;
+    margin-right: 10px;
+}
+  
+header .song .hits .buttons button:hover{
+    background: #0b1320;
+}
+  
+header .song .hits .buttons button:nth-child(1):hover{
+    background-color: #36C832;
+}
+
+header .song .mixes {
+    margin: 40px 0px 0px 30px;
+    width: 95%;
+    height: 40vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.namemix{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: -1%;
+    height: 1%;
+    font-size: 25px;
+}
+
+header .song .mixes::-webkit-scrollbar{
+    display: flex;
+}
+
+header .song .mixes .list {
+    width: 100%;
+    display: flex;
+}
+
+header .song .mixes .list li {
+    min-width: 200px;
+    height: 280px;
+    list-style-type: none;
+    margin-right: 15px;
+    transition: .3s linear;
+    background-color: rgba(22, 30, 51, 0.7);
+    border-radius: 7px;
+}
+
+header .song .mixes .list li:hover{
+    background: rgba(37, 37, 76, 0.9);
+}
+
+header .song .mixes .list li .imgplay {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .mixes .list li .imgplay img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border-bottom: 6px solid #ce5858;
+}
+
+header .song .mixes .list li:nth-child(2) .imgplay img{
+    border-bottom: 6px solid #ffcc00;
+}
+
+header .song .mixes .list li:nth-child(3) .imgplay img{
+    border-bottom: 6px solid #ffcc00;
+}
+
+header .song .mixes .list li .imgplay a i{
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4fc44b;
+    padding: 9px 10px 9px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+header .song .mixes .list li .imgplay .bi-spotify{
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    left: 25px;
+}
+
+header .song .mixes .list li .imgplay .bi-file-fill{
+    position: absolute;
+    color:#e46363;
+    font-size: 12px;
+    bottom: -5px;
+    left: 20px;
+}
+
+header .song .mixes .list li:nth-child(2) .imgplay .bi-file-fill{
+    color:#ffcc00;
+}
+
+header .song .mixes .list li:nth-child(3) .imgplay .bi-file-fill{
+    color:#ffcc00;
+}
+
+header .song .mixes .list li .imgplay h5{
+    position: absolute;
+    bottom: -5px;
+    left: 37px;
+    font-size: 14px;
+}
+
+header .song .mixes .list li:hover .bi{
+    opacity: 1;
+}
+
+header .song .mixes .list li h4{
+    max-width: 150px;
+    margin: 25px 0px 0px 10px;
+    padding: 15px;
+}
+
+header .song .mixes .list li h4 div{
+    opacity: .5;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+header .song .artists {
+    margin-left: 30px;
+    width: 95%;
+    height: 50vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+header .song .artists::-webkit-scrollbar{
+    display: flex;
+}
+
+header .song .artists .nameartist h4 {
+    font-size: 25px;
+}
+
+header .song .artists .list {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+}
+
+header .song .artists .list li {
+    min-width: 200px;
+    height: 260px;
+    list-style-type: none;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    transition: .3s linear;
+    background-color: rgba(22, 30, 51, 0.7);
+    border-radius: 7px;
+}
+
+header .song .artists .list li:hover{
+    background: rgba(37, 37, 76, 0.9);
+}
+
+header .song .artists .list li .imgplay {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .song .artists .list li .imgplay img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .song .artists .list li .imgplay a i{
+    position: absolute;
+    left: 115px;
+    top: 115px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4fc44b;
+    padding: 9px 10px 9px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+header .song .artists .list li:hover .bi{
+    opacity: 1;
+}
+
+header .song .artists .list li h4{
+    max-width: 150px;
+    margin: 20px 0px 0px 10px;
+    padding: 17px;
+}
+
+header .song .artists .list li h4 div{
+    margin-top: 10px;
+    opacity: .5;
+    font-size: 15px;
+}
+
+.main2 .list {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 30px;
+    overflow-y: hidden;
+}
+
+.main2 .list::-webkit-scrollbar{
+    display: flex;
+}
+
+.main2 .list li {
+    min-width: 180px;
+    height: 280px;
+    list-style-type: none;
+    margin-right: 25px;
+    background-color: rgba(16, 21, 46, 0.6);
+    border-radius: 7px;
+}
+
+.main2 .list li:hover{
+    background: rgba(31, 31, 72, 0.9);
+}
+
+.main2 .list li .imgplay {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2 .list li .imgplay img{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    border-radius: 4px;
+}
+
+.main2 .list li .imgplay a i{
+    position: absolute;
+    left: 105px;
+    top: 95px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4fc44b;
+    padding: 9px 10px 9px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+.main2 .list li .imgplay .bi-spotify{
+    position: absolute;
+    font-size: 12px;
+    top: 17px;
+    left: 17px;
+}
+
+.main2 .list li:hover .bi{
+    opacity: 1;
+}
+
+.main2 .list li h4{
+    max-width: 150px;
+    padding: 15px;
+}
+
+.main2 .list li h4 div{
+    opacity: .5;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.namemix2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+    header .song .profile1 {
+        display: block;
+    }
+
+    header .menu {
+        width: 0%;
+    }
+
+    header .song {
+        width: 100%;
+    }
+
+    header .preview .p-2 button{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    header .song .hits .hit2 .name{
+        font-size: 20px;
+    }
+
+    header .song .hits .hit2 .plname{
+        font-size: 13px;
+    }
+    
+    header .song .hits .hit2 .name{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 25%;
+    }
+    
+    header .song .hits .hit2 .desc{
+        font-size: 10px;
+    }
+    
+    header .song .hits .hit2 .buttons{
+        width: 70%;
+        height: 20%;
+    }
+
+    header .song .hits .hit2{
+        width: 50%;
+        height: 90%;
+    }
+
+    header .song .hits{
+        height: 30%;
+    }
+
+    .namemix2{
+        font-size: 18px;
+    }
+
+    .main2 .list {
+        padding-left: 10px;
+    }
+
+    .pr {
+        right: 140px;
+    }
+    
+    .sp {
+        right: 220px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    header .song .hits .hitimg{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    header .song .hits .hitimg{
+        width: 200px;
+        height: 200px;
+    }
+}

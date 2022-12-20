@@ -1,0 +1,625 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.svgg {
+    fill: white;
+}
+
+.sectionF {
+    width: 100%;
+    height: 735px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(223, 12, 139);
+}
+
+.secF {
+    display: block;
+    padding-left: 50px;
+    color: white;
+}
+
+.secF h1 {
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.secF button {
+    width: 30%;
+    height: 7vh;
+    color: white;
+    border: 1px solid black;
+    border-radius: 35px;
+}
+
+.buttons {
+    padding: 50px 50px 50px 0;
+    display: flex;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: #000;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: rgb(140, 0, 75);
+}
+
+.buttons button:nth-child(1) {
+    width: 350px;
+    background-color: rgb(21, 21, 21);
+}
+
+.buttons button:nth-child(2) {
+    margin-left: 20px;
+    width: 350px;
+    background-color: rgb(223, 12, 139);
+}
+
+.photo {
+    width: 550px;
+}
+
+.sectionS {
+    width: 100%;
+    height: 595 px;
+    font-weight: 900;
+    position: relative;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex img {
+    width: 142px;
+    height: 142px;
+}
+
+.flex div {
+    margin: 20px;
+}
+
+.flex p {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.blockk {
+    display: block;
+    text-align: center;
+}
+
+.sectionS h2 {
+    text-align: center;
+    margin: 80px;
+    font-size: 50px;
+    color: black;
+}
+
+.sectionT {
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.sectionT h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    color: black;
+}
+
+.sectionT h3 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.sectionTdiv {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    border-top: 17px solid #222;
+    display: block;
+    width: 100%;
+    color: white;
+    position: relative;
+
+}
+
+footer .hh a {
+    color: grey;
+    text-align: left;
+    margin-left: 190px;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+
+footer .content {
+    max-width: 1350px;
+    margin: 0px 90px;
+    padding: 20px;
+    display: flex;
+    margin-top: 85px;
+    align-items: stretch;
+}
+
+footer .content .box {
+    width: 20%;
+}
+
+footer .content p {
+    text-align: justify;
+}
+
+footer .content .middle {
+    padding-left: 80px;
+    display: block;
+}
+
+footer .content .middle p {
+    margin-top: 30px;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+footer .content .middle a {
+    line-height: 32px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+footer .content .middle div {
+    padding-bottom: 15px;
+}
+
+footer .content a:hover {
+    text-decoration: none;
+    color: rgb(4, 192, 41);
+}
+
+footer .niz a {
+    color: grey;
+    text-decoration: none;
+    padding: 1%;
+}
+
+footer .niz a:hover {
+    text-decoration: none;
+    color: rgb(4, 192, 41);
+}
+
+footer .niz {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20%;
+}
+
+footer .hh a:hover {
+    text-decoration: underline;
+}
+
+footer .content .middle select {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.price-row {
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin-top: 100px;
+}
+
+.price-col {
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+}
+
+.price-col p {
+    font-size: 22px;
+}
+
+.price-col h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.price-col ul {
+    text-align: left;
+    height: 250px;
+    margin: 10px 0;
+    color: #ddd;
+    border-top: 1px solid black;
+}
+
+.price-col ul li {
+    color: black;
+    font-weight: 600;
+    margin: 15px 30px 10px 0;
+}
+
+.price-col button {
+    width: 70%;
+    padding: 14px 0;
+    margin-bottom: 25px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.price-col button:hover {
+    cursor: pointer;
+    width: 75%;
+}
+
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    line-height: 65px;
+    text-align: center;
+    background-color: black;
+}
+
+.nav div.logo {
+    margin-top: 20px;
+    width: 220px;
+    position: absolute;
+}
+
+
+.nav div.main_list {
+    width: 600px;
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li {
+    width: 120px;
+    height: 65px;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover {
+    color: rgb(4, 192, 41);
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span {
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1) {
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2) {
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3) {
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .secF {
+        padding-left: 50px;
+    }
+
+    .sectionF {
+        width: 100%;
+        height: 935px;
+        display: block;
+        align-items: center;
+        justify-content: ce;
+        position: relative;
+        background-color: rgb(223, 12, 139);
+    }
+
+    .secF h1 {
+        padding-bottom: 30px;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .secF button {
+        width: 50%;
+        height: 4vh;
+        color: white;
+        border: 1px solid black;
+        border-radius: 35px;
+    }
+
+    .photo {
+        width: 30%;
+    }
+
+    .phot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        margin: 0;
+    }
+
+    .nav div.logo {
+        margin-left: 15px;
+    }
+
+    .nav div.main_list {
+        width: 60%;
+        margin-top: 65px;
+        height: 0px;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .nav div.show_list {
+        height: 100vh;
+    }
+
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        top: 80px;
+    }
+
+    .nav div.main_list ul li {
+        width: 100%;
+        background-color: black;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        display: table;
+        right: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .sectionS {
+        width: 100%;
+        height: 895px;
+        font-weight: 900;
+        position: relative;
+        background-color: white;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .flex div {
+        margin: 20px;
+    }
+
+    .flex p {
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .blockk {
+        display: block;
+        text-align: center;
+        width: 40%;
+    }
+
+    .sectionS h2 {
+        text-align: center;
+        margin: 80px;
+        font-size: 50px;
+        color: black;
+    }
+
+    .sectionT {
+        display: flex;
+        margin-bottom: 0px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .price-row {
+        width: 30%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer .content {
+        display: block;
+    }
+
+    .svgg {
+        margin-left: 0;
+    }
+
+    footer .content .middle {
+        padding-left: 0;
+    }
+
+    footer .content .box {
+        width: 100%;
+    }
+
+    footer .niz {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    footer .niz a {
+        display: block;
+    }
+
+    .sectionS {
+        height: auto;
+    }
+
+    .price-row {
+        width: 60%;
+    }
+
+    .buttons button {
+        width: 50%;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    footer .content .middle {
+        padding-left: 0;
+    }
+}
